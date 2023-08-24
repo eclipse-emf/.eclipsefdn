@@ -32,8 +32,6 @@ orgs.newOrg('eclipse-emf') {
       allow_update_branch: false,
       default_branch: "master",
       dependabot_alerts_enabled: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('org.eclipse.emf') {
@@ -41,8 +39,6 @@ orgs.newOrg('eclipse-emf') {
       default_branch: "master",
       dependabot_alerts_enabled: false,
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
   ],
