@@ -28,6 +28,10 @@ orgs.newOrg('eclipse-emf') {
     },
   ],
   _repositories+:: [
+    orgs.newRepo('.github') {
+      allow_update_branch: false,
+      web_commit_signoff_required: false,
+    },
     orgs.newRepo('emf-website') {
       allow_update_branch: false,
       default_branch: "master",
