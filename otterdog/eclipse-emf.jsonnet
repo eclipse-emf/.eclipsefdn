@@ -15,6 +15,9 @@ orgs.newOrg('eclipse-emf') {
     packages_containers_public: false,
     readers_can_create_discussions: true,
     web_commit_signoff_required: false,
+    workflows+: {
+      actions_can_approve_pull_request_reviews: false,
+    },
   },
   webhooks+: [
     orgs.newOrgWebhook('https://ci.eclipse.org/emf/github-webhook/') {
