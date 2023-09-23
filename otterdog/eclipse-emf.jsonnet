@@ -30,18 +30,24 @@ orgs.newOrg('eclipse-emf') {
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       web_commit_signoff_required: false,
     },
     orgs.newRepo('emf-website') {
+      allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       web_commit_signoff_required: false,
     },
     orgs.newRepo('org.eclipse.emf') {
+      allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_discussions: true,
       web_commit_signoff_required: false,
