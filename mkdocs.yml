@@ -4,6 +4,9 @@ strict: false
 
 site_url: https://eclipse-emf.github.io/.eclipsefdn/
 
+repo_name: eclipse-emf/.eclipsefdn
+repo_url: https://github.com/eclipse-emf/.eclipsefdn/
+
 docs_dir: ./docs
 site_dir: ./_site
 
