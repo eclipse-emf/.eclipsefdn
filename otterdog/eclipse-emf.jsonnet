@@ -3,7 +3,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-emf') {
   settings+: {
     blog: "https://www.eclipse.org/emf",
-    default_repository_permission: "none",
     dependabot_alerts_enabled_for_new_repositories: false,
     dependabot_security_updates_enabled_for_new_repositories: false,
     dependency_graph_enabled_for_new_repositories: false,
@@ -34,6 +33,9 @@ orgs.newOrg('eclipse-emf') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+      },
     },
     orgs.newRepo('emf-website') {
       allow_merge_commit: true,
@@ -42,6 +44,9 @@ orgs.newOrg('eclipse-emf') {
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        enabled: false,
+      },
     },
     orgs.newRepo('org.eclipse.emf') {
       allow_merge_commit: true,
@@ -51,6 +56,9 @@ orgs.newOrg('eclipse-emf') {
       dependabot_alerts_enabled: false,
       has_discussions: true,
       web_commit_signoff_required: false,
+      workflows+: {
+        enabled: false,
+      },
     },
   ],
 }
