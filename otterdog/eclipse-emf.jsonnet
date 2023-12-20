@@ -8,7 +8,6 @@ orgs.newOrg('eclipse-emf') {
     dependency_graph_enabled_for_new_repositories: false,
     description: "Provides code generation facilities for building tools and applications based on a structured data model.",
     email: "emf-dev@eclipse.org",
-    members_can_change_project_visibility: false,
     name: "Eclipse Modeling Framework",
     packages_containers_internal: false,
     packages_containers_public: false,
