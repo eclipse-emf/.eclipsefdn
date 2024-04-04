@@ -7,7 +7,6 @@ orgs.newOrg('eclipse-emf') {
     description: "Provides code generation facilities for building tools and applications based on a structured data model.",
     email: "emf-dev@eclipse.org",
     name: "Eclipse Modeling Framework",
-    readers_can_create_discussions: true,
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
