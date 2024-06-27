@@ -3,7 +3,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-emf') {
   settings+: {
     blog: "https://www.eclipse.org/emf",
-    dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Provides code generation facilities for building tools and applications based on a structured data model.",
     email: "emf-dev@eclipse.org",
     name: "Eclipse Modeling Framework",
